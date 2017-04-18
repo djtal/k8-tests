@@ -16,3 +16,10 @@ spec:
         backend:
           serviceName: echoserver
           servicePort: 8080
+  - host: prometheus.myminikube.info
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: prometheus
+          servicePort: 9090
